@@ -17,10 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/first', function () {
-    return view('about');
-});
 
-Route::get('/second', function () {
-    return view('contact');
-});
+Route::get('/first' , 'FirstController@index');
+
+Route::get('/second' , 'SecondController@index');
